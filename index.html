@@ -1,0 +1,376 @@
+<!-- test run website in computer to emsure resume pdf can be downloaded without local computer + screen size -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>KY's portfolio</title>
+
+    <link rel="icon" href="imgs/jpeg/ky_initial.jpg" type="image/jpeg" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__content">
+        <div class="header__logo-container">
+          <div class="header__logo-img-cont">
+            <img
+              src="./imgs/jpeg/professional_profile.jpg"
+              alt="KY's fun profile"
+              class="header__logo-img"
+            />
+          </div>
+          <span class="header__logo-sub">Chong Kai Ying</span>
+        </div>
+        <div class="header__main">
+          <ul class="header__links">
+            <li class="header__link-wrapper">
+              <a href="./index.html" class="header__link"> Home </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#about" class="header__link">About </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#skills" class="header__link">Skills</a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#projects" class="header__link">Projects</a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#contact" class="header__link">Contact</a>
+            </li>
+          </ul>
+          <div class="header__main-ham-menu-cont">
+            <img
+              src="./imgs/svg/ham-menu.svg"
+              alt="hamburger menu"
+              class="header__main-ham-menu"
+            />
+            <img
+              src="./imgs/svg/ham-menu-close.svg"
+              alt="hamburger menu close"
+              class="header__main-ham-menu-close d-none"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="header__sm-menu">
+        <div class="header__sm-menu-content">
+          <ul class="header__sm-menu-links">
+            <li class="header__sm-menu-link">
+              <a href="./index.html"> Home </a>
+            </li>
+            <li class="header__sm-menu-link">
+              <a href="./index.html#about"> About </a>
+            </li>
+            <li class="header__sm-menu-link">
+              <a href="./index.html#skills"> Skills </a>
+            </li>
+            <li class="header__sm-menu-link">
+              <a href="./index.html#projects"> Projects </a>
+            </li>
+            <li class="header__sm-menu-link">
+              <a href="./index.html#contact"> Contact </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <section class="home-hero">
+      <div class="home-hero__content">
+        <h1 class="heading-primary">Hello, I'm Kai Ying</h1>
+        <div class="home-hero__info">
+          <p class="text-primary">
+            I'm a Computer Science student who is passionate about creating innovative solutions that make a real impact. 
+            I enjoy turning challenges into hands-on projects and I'm always eager to learn, build, and grow. 
+            If you’re working on something exciting or just want to chat, let’s connect.
+            I’d love to be part of something meaningful!     
+            </p>
+          </div>
+          <div class="home-hero__socials home-hero__socials--center">
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=chongkaiying578@gmail.com" class="home-hero__social-icon-link" target="_blank" aria-label="Gmail">
+            <img src="./imgs/svg/gmail_logo.svg" alt="Gmail" class="home-hero__social-icon home-hero__social-icon--circle" />
+            </a>
+            <a href="https://www.linkedin.com/in/kai-ying-907bb6178" class="home-hero__social-icon-link" target="_blank" aria-label="LinkedIn">
+            <img src="./imgs/svg/linkedin_logo.svg" alt="LinkedIn" class="home-hero__social-icon home-hero__social-icon--circle" />
+            </a>
+            <a href="https://github.com/kaiiyingg" class="home-hero__social-icon-link" target="_blank" aria-label="GitHub">
+            <img src="./imgs/svg/github_logo.svg" alt="GitHub" class="home-hero__social-icon home-hero__social-icon--circle" />
+            </a>
+          </div>
+        
+          <div class="home-hero__cta">
+            <a href="./pdf/Resume_Chong Kai Ying.pdf" class="btn btn--bg btn--download" download>
+            <img src="./imgs/png/download_logo.png" alt="Download" class="btn__icon" />
+            Download CV
+            </a>
+            <a href="#about" class="btn btn--bg" id="lets-connect-btn">Let's Connect!</a>
+          </div>
+          </div>
+        </section>
+
+    <section id="about" class="about sec-pad">
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-med">
+          <span class="heading-sec__main">About Me</span>
+          <span class="heading-sec__sub"></span>
+        </h2>
+        <div class="about__content">
+          <div class="about__content-main">
+            <h3 class="about__content-title">More about myself</h3>
+            <div class="about__content-details">
+              <p class="about__content-details-para">
+                Hey! I'm <strong>Kai Ying</strong>, a      
+                <strong> Computer Science</strong> 
+                student studying in <strong>Nanyang Technological University, Singapore.</strong>
+                I learn best by doing and love the thrill of solving problems.
+                People describe me as humorous, approachable, and hardworking.
+              </p>
+              <p class="about__content-details-para">
+                In my free time, I enjoy watching movies, exercising, and picking up new technical skills through personal projects and hackathons.
+                I'm currently exploring different areas in tech, with a strong interest in <strong>Cybersecurity</strong> and <strong>AI</strong>.     
+                Throughout my journey, I've built some amazing projects I'm proud of (including this website) so do check them out!
+              <p class="about__content-details-para">
+                I'm also open to <strong>internships</strong> and <strong>collaborations</strong> in the tech industry. 
+                If you’re working on something exciting that aligns with my skills and experience, don’t hesitate to reach out through the <strong>Contact</strong> section below.
+              </p>                      
+            <div class="about__btn-row">
+                <a href="./#projects" class="btn btn--med btn--theme dynamicBgClr">Projects</a>
+                <a href="./#contact" class="btn btn--med btn--theme dynamicBgClr" style="margin-left: 16px;">Contact</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="skills-section sec-pad">
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-med">
+          <span class="heading-sec__main">Skills & Strengths</span>
+          <span class="heading-sec__sub">What I Bring</span>
+        </h2>
+        <div class="skills">
+          <div class="skills__skill">Python</div>
+          <div class="skills__skill">Java</div>
+          <div class="skills__skill">HTML</div>
+          <div class="skills__skill">CSS</div>
+          <div class="skills__skill">JavaScript</div>
+          <div class="skills__skill">C</div>
+          <div class="skills__skill">C++</div>
+          <div class="skills__skill">GitHub</div>
+          <div class="skills__skill">Analytical</div>
+          <div class="skills__skill">Detail-Oriented</div>
+          <div class="skills__skill">Fast Learner</div>
+          <div class="skills__skill">Growth Mindset</div>
+          <div class="skills__skill">Creative</div>
+          <div class="skills__skill">Critical Thinker</div>
+          <div class="skills__skill">Time Management</div>
+          <div class="skills__skill">Problem-Solver</div>
+          <div class="skills__skill">Communicator</div>
+          <div class="skills__skill">Reliable</div>
+          <div class="skills__skill">Self-Motivated</div>
+          <div class="skills__skill">Team Player</div>
+          <div class="skills__skill">Adaptable</div>
+          <div class="skills__skill">Multitasker</div>
+        </div>
+      </div>
+    </section>
+    
+    <section id="projects" class="projects sec-pad">
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-bg">
+          <span class="heading-sec__main">Projects</span>
+          <span class="heading-sec__sub">
+            Each project represents a step in my journey, from learning the basics to solving real-world problems. 
+            Whether it's a solo build or a collaboration, I focus on writing clean code, thinking creatively, and I'm always improving.
+            Below are some of my projects that I'm proud of.
+          </span>
+        </h2>
+        <div class="projects__content">
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img
+                src="./imgs/png/portfolio_website.png"
+                alt="Portfolio_website"
+                class="projects__row-img"
+                loading="lazy"
+              />
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Portfolio website</h3>
+              <p class="projects__row-content-desc">
+                Built my first website using HTML, CSS, and JavaScript after self-learning it.
+                It’s a space where I share my journey, projects, and what I’ve been learning.
+                It works well on all devices, so you can explore it anywhere.
+                This website reflects my curiosity in tech and my dedication to continuous learning.
+              </p>
+              <a
+                href="https://github.com/kaiiyingg/Portfolio-website.git"
+                class="btn btn--med btn--theme dynamicBgClr"
+                target="_blank"
+                >View in GitHub</a>
+            </div>
+          </div>
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img
+                src="./imgs/png/secure_website.png"
+                alt="Secure website"
+                class="projects__row-img"
+                loading="lazy"
+              />
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Build-To-Order (BTO) Management System</h3>
+              <p class="projects__row-content-desc">
+                Built a Java-based BTO Management System in a team of four, applying object-oriented principles like encapsulation and SOLID design.
+                Implemented core features such as applicant registration, status tracking, and flat booking using a 5-layer architecture and file-based storage via CLI.
+                Documented the system with UML diagrams and sequence diagrams, contributing to scalable, maintainable design decisions.
+              </p>
+              <a
+                href="https://github.com/tziyang12/sc2002-proj.git"
+                class="btn btn--med btn--theme dynamicBgClr"
+                target="_blank"
+                >View in GitHub</a>
+            </div>
+          </div>
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img
+                src="./imgs/png/Data_analysis.png"
+                alt="Data analysis project"
+                class="projects__row-img"
+                loading="lazy"
+              />
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Student Team Formation System</h3>
+              <p class="projects__row-content-desc">
+                Developed a student team formation algorithm in Python with a team of five, balancing school, gender, and CGPA without using external libraries.
+                Processed 6,000 records and visualized team diversity using matplotlib and seaborn for clear evaluation.
+                Applied computational thinking to design modular solutions and documented the project in a Jupyter Notebook, earning an A grade.  
+              </p>
+              <a
+                href="https://github.com/kaiiyingg/sc1003-mini-project.git"
+                class="btn btn--med btn--theme dynamicBgClr"
+                target="_blank"
+                >View in GitHub</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact sec-pad dynamicBg">
+      <div class="main-container">
+      <h2 class="heading heading-sec heading-sec__mb-med">
+        <span class="heading-sec__main heading-sec__main--lt">Contact</span>
+        <span class="heading-sec__sub heading-sec__sub--lt">
+        Feel free to reach out to me for any inquiries, collaborations, or just a friendly chat!
+        Email me at chongkaiying578@gmail.com or fill out the form below.
+        </span>
+      </h2>
+      <div class="contact__form-container">
+        <form id="contactForm" class="contact__form" action="https://formspree.io/f/xkgrawjl" method="POST">
+        <div class="contact__form-field">
+          <label class="contact__form-label" for="name">Name</label>
+          <input
+          required
+          placeholder="Enter Your Name"
+          type="text"
+          class="contact__form-input"
+          name="name"
+          id="name"
+          />
+        </div>
+        <div class="contact__form-field">
+          <label class="contact__form-label" for="email">Email</label>
+          <input
+          required
+          placeholder="Enter Your Email"
+          type="email"
+          class="contact__form-input"
+          name="email"
+          id="email"
+          />
+        </div>
+        <div class="contact__form-field">
+          <label class="contact__form-label" for="message">Message</label>
+          <textarea
+          required
+          cols="30"
+          rows="10"
+          class="contact__form-input"
+          placeholder="Enter Your Message"
+          name="message"
+          id="message"
+          ></textarea>
+        </div>
+        <button type="submit" class="btn btn--theme contact__btn">
+          Submit
+        </button>
+        </form>
+      </div>
+      </div>
+    </section>
+
+    <footer class="main-footer">
+      <div class="main-container">
+        <div class="main-footer__upper">
+          <div class="main-footer__row main-footer__row-1">
+            <h2 class="heading heading-sm main-footer__heading-sm">
+              <span>Socials</span>
+            </h2>
+            <div class="main-footer__social-cont">
+              <a target="_blank" rel="noreferrer" href="#">
+                <img
+                  class="main-footer__icon"
+                  src="./imgs/svg/gmail_logo.svg"
+                  alt="icon"
+                />
+              </a>
+              <a target="_blank" rel="noreferrer" href="#">
+                <img
+                  class="main-footer__icon"
+                  src="./imgs/svg/linkedin_logo.svg"
+                  alt="icon"
+                />
+              </a>           
+              <a target="_blank" rel="noreferrer" href="#">
+                <img
+                  class="main-footer__icon"
+                  src="./imgs/svg/white_github_logo.svg"
+                  alt="icon"
+                />
+              </a>    
+            </div>
+          </div>
+          <div class="main-footer__row main-footer__row-2">
+            <h4 class="heading heading-sm text-lt">Chong Kai Ying</h4>
+            <p class="main-footer__short-desc">
+            I'm a tech enthusiast passionate about collaborating and creating meaningful projects. 
+            I love contributing my skills to build innovative solutions, and I'm excited to explore new opportunities together.
+            </p>
+          </div>
+        </div>
+        <div class="main-footer__lower">
+          &copy; Copyright 2025. Made by
+          <a rel="noreferrer" target="_blank" href="https://github.com/kaiiyingg/Portfolio-website"
+            >Chong Kai Ying</a
+          >
+        </div>
+      </div>
+    </footer>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
