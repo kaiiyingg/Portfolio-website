@@ -1,0 +1,78 @@
+// =============================
+// Experience Section Styles
+// =============================
+.experience {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+
+  &__item {
+    background: #faf6ff;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(139,92,246,0.08);
+    padding: 2.5rem 2rem;
+    border-left: 5px solid #8B5CF6;
+    transition: box-shadow 0.2s;
+    &:hover {
+      box-shadow: 0 8px 32px rgba(139,92,246,0.18);
+    }
+  }
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 0.5rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  &__company {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #8B5CF6;
+  }
+  &__date {
+    font-size: 1.2rem;
+    color: #888;
+    font-style: italic;
+  }
+  &__role {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #4f378b;
+  }
+  &__desc {
+    margin-left: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    li {
+      margin-bottom: 1.4rem;
+      font-size: 1.35rem;
+      color: #2d1457;
+      line-height: 2.1;
+      font-weight: 600;
+      background: #ede9fe;
+      border-radius: 12px;
+      padding: 1.2rem 1.8rem;
+      box-shadow: 0 2px 12px rgba(139,92,246,0.10);
+      transition: background 0.2s;
+      outline: none;
+      border: 2px solid transparent;
+    }
+    li:focus, li:hover {
+      background: #d1c4e9;
+      border-color: #8B5CF6;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .experience__item {
+    padding: 1.5rem 1rem;
+  }
+  .experience__company {
+    font-size: 1.3rem;
+  }
+}
