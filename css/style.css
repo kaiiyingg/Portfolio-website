@@ -775,30 +775,54 @@ textarea {
   text-align: center;
   justify-content: flex-start;
   padding-top: 10rem;
-  min-height: 70vh;
+  min-height: 90vh;
 }
 
 .home-hero__socials {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 4rem auto 4.5rem auto;
+  margin: 4rem auto 0 auto;
   gap: 2.5rem;
+  background: none !important;
+  box-shadow: none !important;
+  border: none !important;
+  padding: 0;
+  margin-top: 10rem;
 }
 
 .home-hero__cta {
-  margin-top: 10rem;
-  gap: 2.5rem;
+  margin-top: 20rem;
+  gap: 2.2rem;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
+  justify-content: center;
+}
+@media only screen and (max-width: 37.5em) {
+  .home-hero__cta {
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 18rem;
+  }
 }
 
 .btn--bg {
-  padding: 1rem 2.5rem;
-  font-size: 1.4rem;
-  min-width: 180px;
+  padding: 1rem 2.8rem;
+  font-size: 1.5rem;
+  min-width: 150px;
   border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  white-space: nowrap;
+}
+
+.btn__icon {
+  width: 22px;
+  height: 22px;
+  margin-right: 0.7rem;
 }
 
 .main-footer {
@@ -990,17 +1014,18 @@ textarea {
 }
 .home-hero__cta {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
+  justify-content: center;
   gap: 2.5rem;
-  margin-top: 4rem;
-  margin-top: 5rem;
+  margin-top: 8rem;
   text-align: center;
 }
 @media only screen and (max-width: 37.5em) {
   .home-hero__cta {
+    flex-direction: column;
     gap: 2rem;
-    margin-top: 3rem;
+    margin-top: 5rem;
   }
 }
 

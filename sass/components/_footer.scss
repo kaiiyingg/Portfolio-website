@@ -195,16 +195,17 @@
   }
   &__cta {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    justify-content: center;
     gap: 2.5rem;
-    margin-top: 4rem;
-    @media only screen and (max-width: 37.5em) {
-      gap: 2rem;
-      margin-top: 3rem;
-    }
-    margin-top: 5rem;
+    margin-top: 8rem;
     text-align: center;
+    @media only screen and (max-width: 37.5em) {
+      flex-direction: column;
+      gap: 2rem;
+      margin-top: 5rem;
+    }
   }
 }
 
