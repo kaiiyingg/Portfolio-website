@@ -382,11 +382,17 @@ textarea {
 }
 .projects__row-img-cont {
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-height: 400px;
 }
 .projects__row-img {
   width: 100%;
+  height: 100%;
   display: block;
-  object-fit: cover;
+  object-fit: contain;
+  margin: auto;
 }
 .projects__row-content {
   padding: 2rem 0;
