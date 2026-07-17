@@ -39,17 +39,19 @@
     font-size: 2rem;
     font-weight: 700;
     color: #8B5CF6;
+    overflow-wrap: anywhere;
   }
   &__date {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     color: #888;
     font-style: italic;
   }
   &__role {
-    font-size: 1.3rem;
+    font-size: 1.8rem;
     font-weight: 600;
     margin-bottom: 1rem;
     color: #4f378b;
+    line-height: 1.5;
   }
   &__desc {
     margin-left: 0;
@@ -57,9 +59,9 @@
     padding-left: 0;
     li {
       margin-bottom: 1.4rem;
-      font-size: 1.35rem;
+      font-size: 1.6rem;
       color: #2d1457;
-      line-height: 2.1;
+      line-height: 1.8;
       font-weight: 600;
       background: #ede9fe;
       border-radius: 12px;
@@ -68,6 +70,7 @@
       transition: background 0.2s;
       outline: none;
       border: 2px solid transparent;
+      overflow-wrap: anywhere;
     }
     li:focus, li:hover {
       background: #d1c4e9;
@@ -81,6 +84,15 @@
     padding: 1.5rem 1rem;
   }
   .experience__company {
-    font-size: 1.3rem;
+    font-size: 1.8rem;
+  }
+  .experience__date {
+    font-size: 1.5rem;
+  }
+  .experience__role {
+    font-size: 1.7rem;
+  }
+  .experience__desc li {
+    font-size: 1.5rem;
   }
 }

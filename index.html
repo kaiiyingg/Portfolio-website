@@ -41,8 +41,19 @@
             <li class="header__link-wrapper">
               <a href="./index.html#skills" class="header__link">Skills</a>
             </li>
-            <li class="header__link-wrapper">
+            <li class="header__link-wrapper header__link-wrapper--dropdown">
               <a href="./index.html#experience" class="header__link">Experience</a>
+              <ul class="header__dropdown" aria-label="Experience subsections">
+                <li class="header__dropdown-item">
+                  <a href="./index.html#internship-experience" class="header__dropdown-link">Internship</a>
+                </li>
+                <li class="header__dropdown-item">
+                  <a href="./index.html#hackathon-experience" class="header__dropdown-link">Hackathon</a>
+                </li>
+                <li class="header__dropdown-item">
+                  <a href="./index.html#other-experience" class="header__dropdown-link">Other</a>
+                </li>
+              </ul>
             </li>
             <li class="header__link-wrapper">
               <a href="./index.html#projects" class="header__link">Projects</a>
@@ -79,6 +90,15 @@
             </li>
             <li class="header__sm-menu-link">
               <a href="./index.html#experience"> Experience </a>
+            </li>
+            <li class="header__sm-menu-link">
+              <a href="./index.html#internship-experience"> Internship </a>
+            </li>
+            <li class="header__sm-menu-link">
+              <a href="./index.html#hackathon-experience"> Hackathon </a>
+            </li>
+            <li class="header__sm-menu-link">
+              <a href="./index.html#other-experience"> Other </a>
             </li>
             <li class="header__sm-menu-link">
               <a href="./index.html#projects"> Projects </a>
@@ -131,20 +151,25 @@
             <h3 class="about__content-title">More about myself</h3>
             <div class="about__content-details">
               <p class="about__content-details-para">
-                Hey! I'm <strong>Kai Ying</strong>, a      
-                <strong> Computer Science</strong> 
-                student studying in <strong>Nanyang Technological University, Singapore.</strong>
-                I learn best by doing and love the thrill of solving problems.
+                Hey! I'm <strong>Kai Ying</strong>, a <strong>Computer Science</strong> student at
+                <strong>Nanyang Technological University, Singapore.</strong> I learn best by doing and
+                love the thrill of solving problems. I aspire to become a <strong>Software Engineer</strong>,
+                with a future specialization in <strong>AI</strong> and <strong>Cybersecurity</strong>.
                 People describe me as humorous, approachable, and hardworking.
               </p>
               <p class="about__content-details-para">
-                In my free time, I enjoy watching movies, exercising, and picking up new technical skills through personal projects and hackathons.
-                I'm currently exploring different areas in tech, with a strong interest in <strong>Software Engineering</strong> and <strong>Cybersecurity</strong>.     
-                Throughout my journey, I've built some amazing projects I'm proud of (including this website) so do check them out!
+                In my free time, I enjoy watching movies, exercising, and picking up new technical skills
+                through personal projects and hackathons. I'm currently exploring different areas in tech
+                while building strong foundations in <strong>Software Engineering</strong>, <strong>AI</strong>,
+                and <strong>Cybersecurity</strong>. Throughout my journey, I've built projects I'm proud of
+                (including this website), so do check them out!
+              </p>
               <p class="about__content-details-para">
-                I'm also open to <strong>internships</strong> and <strong>collaborations</strong> in the tech industry. 
-                If you’re working on something exciting that aligns with my skills and experience, don’t hesitate to reach out through the <strong>Contact</strong> section below.
-              </p>                      
+                I'm also open to <strong>internships</strong> and <strong>collaborations</strong> in the tech
+                industry. If you're working on something exciting that aligns with my skills and experience,
+                don't hesitate to reach out through the <strong>Contact</strong> section below.
+              </p>
+            </div>
             <div class="about__btn-row">
                 <a href="./#projects" class="btn btn--med btn--theme dynamicBgClr">Projects</a>
                 <a href="./#contact" class="btn btn--med btn--theme dynamicBgClr" style="margin-left: 16px;">Contact</a>
@@ -176,6 +201,7 @@
               <div class="skills__skill">LangChain</div>
               <div class="skills__skill">PostgreSQL</div>
               <div class="skills__skill">Git</div>
+              <div class="skills__skill">R</div>
             </div>
           </div>
           <div class="skills__block">
@@ -185,14 +211,19 @@
               <div class="skills__skill">Eclipse</div>
               <div class="skills__skill">IntelliJ</div>
               <div class="skills__skill">Jupyter Notebook</div>
+              <div class="skills__skill">Google Collab</div>
               <div class="skills__skill">GitHub</div>
               <div class="skills__skill">Git Bash</div>
               <div class="skills__skill">Postman</div>
               <div class="skills__skill">DBeaver</div>
               <div class="skills__skill">Docker</div>
               <div class="skills__skill">Amazon Web Services (AWS)</div>
+              <div class="skills__skill">Azure</div>
+              <div class="skills__skill">Render</div>
+              <div class="skills__skill">Supabase</div>
               <div class="skills__skill">MAMP</div>
               <div class="skills__skill">PhpMyAdmin</div>
+              <div class="skills__skill">Figma</div>
               <div class="skills__skill">Hugo</div>
               <div class="skills__skill">Unit Testing</div>
               <div class="skills__skill">Lint Testing</div>
@@ -240,7 +271,7 @@
           <span class="heading-sec__sub">My Professional Journey</span>
         </h2>
         <div class="experience">
-          <h3 class="experience__group-title">Internship Experience</h3>
+          <h3 id="internship-experience" class="experience__group-title">Internship Experience</h3>
           <div class="experience__item">
             <div class="experience__header">
               <span class="experience__company">Panasonic R&amp;D Center Singapore</span>
@@ -248,7 +279,7 @@
             </div>
             <div class="experience__role">Full-Stack Developer Intern (Professional Internship)</div>
             <ul class="experience__desc">
-              <li>Professional internship focused on full-stack software engineering and production-grade delivery in an enterprise R&amp;D environment.</li>
+              <li>Contributed to full-stack engineering initiatives in an enterprise R&amp;D environment, with a focus on production-ready delivery and team collaboration.</li>
             </ul>
           </div>
           <div class="experience__item">
@@ -258,10 +289,11 @@
             </div>
             <div class="experience__role">Full-Stack Developer Intern</div>
             <ul class="experience__desc">
-              <li>Built a frontend automation framework with built-in security and code quality guardrails, helping reduce feature development time by 70%.</li>
+              <li>Built a frontend automation framework with security and code-quality guardrails, reducing feature development time by 70%.</li>
               <li>Engineered "DocuFill", a high-volume RAG pipeline using Azure OpenAI, vector search, and layout-aware extraction, achieving about 90% accuracy on complex Excel templates.</li>
-              <li>Improved multilingual chatbot quality by adding query intent classification, Cohere reranking, and BEIR-based evaluation to reduce hallucinations.</li>
-              <li>Delivered production features including a PDF-to-DOCX converter, document comparison, translation glossary support, and a Power Automate email-to-Teams workflow.</li>
+              <li>Improved multilingual chatbot quality by adding intent classification, Cohere reranking, and BEIR-based evaluation to reduce hallucinations.</li>
+              <li>Conducted system design research for the company's first production deployment, covering container and database scaling, Redis caching, and load balancing, then validated capacity with k6 load testing.</li>
+              <li>Shipped production features including a PDF-to-DOCX converter, document comparison, translation glossary support, and an email-to-Teams workflow via Power Automate.</li>
             </ul>
           </div>
           <div class="experience__item">
@@ -271,24 +303,12 @@
             </div>
             <div class="experience__role">Software Developer Intern</div>
             <ul class="experience__desc">
-              <li>Engineered backend logic and REST APIs with Java, Spring Boot, and PostgreSQL, reducing data retrieval time on the Freya platform by 30%.</li>
-              <li>Built an automated invoice recalculation feature using historical pricing data, reducing manual pricing errors and improving freight cost accuracy by 15%.</li>
-              <li>Automated unit testing workflows with Python and Pytest, and worked with Docker, CI/CD, and AWS Cognito to ship scalable features in an Agile team setup.</li>
+              <li>Built backend services and REST APIs using Java, Spring Boot, and PostgreSQL, reducing Freya platform data retrieval time by 30%.</li>
+              <li>Developed an automated invoice recalculation workflow using historical pricing data, reducing manual pricing errors and improving freight cost accuracy by 15%.</li>
+              <li>Automated unit testing with Python and Pytest, and worked with Docker, CI/CD, and AWS Cognito to ship scalable features in an Agile team.</li>
             </ul>
           </div>
-          <div class="experience__item">
-            <div class="experience__header">
-              <span class="experience__company">Raffles Hospital, Singapore</span>
-              <span class="experience__date">Jan 2024 - Jun 2024</span>
-            </div>
-            <div class="experience__role">Healthcare, Surgery Centre Intern</div>
-            <ul class="experience__desc">
-              <li>Supported high-volume patient registration and pre-op workflows while coordinating with medical staff to maintain efficient daily operations.</li>
-              <li>Contributed to process improvements that reduced patient wait time by 20% and strengthened my communication and execution in high-pressure settings.</li>
-            </ul>
-          </div>
-
-          <h3 class="experience__group-title">Hackathon Experience</h3>
+          <h3 id="hackathon-experience" class="experience__group-title">Hackathon Experience</h3>
           <div class="experience__item">
             <div class="experience__header">
               <span class="experience__company">NTU SummerBuild 2026 Hackathon</span>
@@ -296,9 +316,9 @@
             </div>
             <div class="experience__role">1st Place + Best Use of Reka AI Award</div>
             <ul class="experience__desc">
-              <li>Co-engineered "Pilly", a multilingual full-stack hospital pharmacy platform, and won 1st place out of 35 teams.</li>
-              <li>Integrated a multimodel AI pipeline with Reka AI and GPT-4.1 for medication verification and prescription support across text, voice, image, and video.</li>
-              <li>Built four-language support with real-time queue updates, push notifications, and an automated translation pipeline for accurate label scanning and chatbot responses.</li>
+              <li>Co-built "Pilly", a multilingual full-stack hospital pharmacy platform, and won 1st place out of 35 teams.</li>
+              <li>Integrated a multimodal AI pipeline using Reka AI and GPT-4.1 for medication verification and prescription support across text, voice, image, and video.</li>
+              <li>Implemented 4-language support with real-time queue updates, push notifications, and automated translation for label scanning and chatbot responses.</li>
             </ul>
           </div>
           <div class="experience__item">
@@ -308,7 +328,7 @@
             </div>
             <div class="experience__role">1st Place Winner - AI Risk Analytics Platform</div>
             <ul class="experience__desc">
-              <li>Led a team of 5 to build and deploy an AI-powered risk analytics platform using FastAPI and React, achieving top results in runtime performance and overall challenge ranking.</li>
+              <li>Led a 5-person team to build and deploy an AI-powered risk analytics platform using FastAPI and React, achieving top results in runtime performance and overall challenge ranking.</li>
               <li>Built a LangChain-based RAG pipeline to analyze 100+ page investment documents and detect portfolio breaches with high precision.</li>
               <li>Developed dynamic dashboards and a GPT-powered assistant to accelerate analyst workflows and reduce report generation time.</li>
             </ul>
@@ -321,7 +341,7 @@
             <div class="experience__role">Product Design &amp; Validation</div>
             <ul class="experience__desc">
               <li>Collaborated in a 4-person team to validate market opportunities for GovTech's no-code BoB platform in sustainability-focused sectors.</li>
-              <li>Proposed product concepts including OCR-based extraction, auto-matching eligibility checks, and blockchain-supported certificate verification.</li>
+              <li>Proposed product concepts including OCR-based extraction, auto-matching eligibility checks, and blockchain-backed certificate verification.</li>
             </ul>
           </div>
           <div class="experience__item">
@@ -332,7 +352,30 @@
             <div class="experience__role">Frontend Developer</div>
             <ul class="experience__desc">
               <li>Built a web-based minimart and voucher platform with a 4-person team for Muhammadiyah Welfare Home.</li>
-              <li>Contributed frontend features and responsive UI components using React, JavaScript, HTML, and CSS.</li>
+              <li>Developed responsive frontend features using React, JavaScript, HTML, and CSS.</li>
+            </ul>
+          </div>
+
+          <h3 id="other-experience" class="experience__group-title">Other Experience</h3>
+          <div class="experience__item">
+            <div class="experience__header">
+              <span class="experience__company">Raffles Hospital, Singapore</span>
+              <span class="experience__date">Jan 2024 - Jun 2024</span>
+            </div>
+            <div class="experience__role">Healthcare, Surgery Centre Intern</div>
+            <ul class="experience__desc">
+              <li>Coordinated with medical staff to optimize surgical workflows, reducing patient wait times by 20%.</li>
+              <li>Executed high-traffic patient registration for 100+ daily arrivals and pre-operative guidance, ensuring 100% data accuracy and stronger patient communication.</li>
+            </ul>
+          </div>
+          <div class="experience__item">
+            <div class="experience__header">
+              <span class="experience__company">Golden Village, Singapore</span>
+              <span class="experience__date">Nov 2021 - Jan 2022</span>
+            </div>
+            <div class="experience__role">Ticketing Staff</div>
+            <ul class="experience__desc">
+              <li>Handled ticket sales, customer inquiries, and clean-up operations, demonstrating strong problem-solving, communication, multitasking, and time management while boosting customer satisfaction by 15%.</li>
             </ul>
           </div>
         </div>
@@ -353,6 +396,53 @@
           <div class="projects__row">
             <div class="projects__row-img-cont">
               <img
+                src="./imgs/png/pilly_logo.png"
+                alt="Pilly hospital pharmacy platform"
+                class="projects__row-img"
+                loading="lazy"
+              />
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Pilly</h3>
+              <p class="projects__row-content-desc">
+                Built for the NTU SummerBuild Hackathon, Pilly is a multilingual full-stack hospital pharmacy platform designed to streamline prescription support and patient experience.
+                The solution combines AI-powered medication guidance, real-time updates, and accessible workflows for healthcare teams and patients.
+              </p>
+              <div class="projects__row-links">
+                <a
+                  href="https://github.com/kaiiyingg/SummerBuild"
+                  class="btn btn--theme projects__row-link-btn dynamicBgClr"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  >GITHUB</a
+                >
+                <a
+                  href="https://devpost.com/software/pilly-689q31?_gl=1*13z4j8f*_gcl_au*MTIzNDY3OTExOS4xNzc3NjQzNzY5*_ga*MTMxNDQwMTYzNC4xNzc3NjQzNzY5*_ga_0YHJK3Y10M*czE3ODE5MjQ3MjAkbzUkZzEkdDE3ODE5MjQ3NTUkajI1JGwwJGgw"
+                  class="btn btn--theme projects__row-link-btn dynamicBgClr"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  >DEVPOST</a
+                >
+                <a
+                  href="http://youtube.com/watch?v=iFPMjVzcIf0&feature=youtu.be"
+                  class="btn btn--theme projects__row-link-btn dynamicBgClr"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  >DEMO</a
+                >
+                <a
+                  href="https://pilly-hn6n.onrender.com/"
+                  class="btn btn--theme projects__row-link-btn dynamicBgClr"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  >APP</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img
                 src="./imgs/png/TechPulse discover page.png"
                 alt="TechPulse discover page"
                 class="projects__row-img"
@@ -367,17 +457,35 @@
                 and WCAG-compliant accessibility. Optimized for performance with connection pooling and caching to deliver sub-second response times 
                 while maintaining scalability within free-tier hosting limits. Achieved 95%+ test coverage across unit, integration, and accessibility testing.
               </p>
-              <a
-                href="https://github.com/kaiiyingg/Personalized-Tech-News-Digest"
-                class="btn btn--med btn--theme dynamicBgClr"
-                target="_blank"
-                >View in GitHub</a>
+              <div class="projects__row-links">
+                <a
+                  href="https://github.com/kaiiyingg/Personalized-Tech-News-Digest"
+                  class="btn btn--theme projects__row-link-btn dynamicBgClr"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  >GITHUB</a
+                >
+                <a
+                  href="https://youtu.be/FGcOdSm-eeU?si=LwKrmJKRzK2rQ-Sp"
+                  class="btn btn--theme projects__row-link-btn dynamicBgClr"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  >DEMO</a
+                >
+                <a
+                  href="https://personalized-tech-news-digest.onrender.com"
+                  class="btn btn--theme projects__row-link-btn dynamicBgClr"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  >APP</a
+                >
+              </div>
             </div>
           </div>
           <div class="projects__row">
             <div class="projects__row-img-cont">
               <img
-                src="./imgs/png/secure_website.png"
+                src="./imgs/png/careroute_dashboard.png"
                 alt="CareRoute navigation app"
                 class="projects__row-img"
                 loading="lazy"
@@ -395,11 +503,11 @@
                 href="https://www.youtube.com/watch?v=-Wr7tD2GRWg"
                 class="btn btn--med btn--theme dynamicBgClr"
                 target="_blank"
-                >View Demo Video</a>
+                >DEMO</a>
               </div>
               </div>
-              <div class="projects__row">
-              <div class="projects__row-img-cont"></div>
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
               <img
                 src="./imgs/png/secure_website.png"
                 alt="Secure website"
@@ -418,7 +526,7 @@
                 href="https://github.com/tziyang12/sc2002-proj.git"
                 class="btn btn--med btn--theme dynamicBgClr"
                 target="_blank"
-                >View in GitHub</a>
+                >GITHUB</a>
             </div>
           </div>
           <div class="projects__row">
@@ -441,7 +549,7 @@
                 href="https://github.com/kaiiyingg/sc1003-mini-project.git"
                 class="btn btn--med btn--theme dynamicBgClr"
                 target="_blank"
-                >View in GitHub</a>
+                >GITHUB</a>
             </div>
           </div>
         </div>
@@ -551,3 +659,4 @@
     <script src="./index.js"></script>
   </body>
 </html>
+
